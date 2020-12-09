@@ -1,0 +1,51 @@
+.Screen {
+  display: grid;
+  grid-template-rows: 10fr 80fr 10fr;
+  grid-template-columns: 40fr 25fr 40fr;
+  height: 100vh;
+}
+.calculator {
+  grid-column: 2;
+  grid-row: 2;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1em;
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button {
+  display: grid;
+  margin: 1em;
+  place-items: center;
+  width: 3em;
+  height: 3em;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(7, 25, 185);
+  color: white;
+  cursor: pointer;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(56, 135, 253);
+  border: 1px solid black;
+  border-top: gray;
+  border-radius: 5px;
+}
+.display {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(212, 212, 212);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 1em;
+}
+.disabled {
+  background-color: red;
+}
